@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Review Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Book Review Site</h1>
+    </header>
+    <main>
+        <section id="book-list">
+            <!-- Book cards will be dynamically added here -->
+        </section>
+        <section id="add-review">
+            <h2>Add Review</h2>
+            <form id="review-form">
+                <input type="text" id="book-title" placeholder="Book Title" required>
+                <input type="text" id="author" placeholder="Author" required>
+                <textarea id="review" placeholder="Your Review" required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Book Review Site</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

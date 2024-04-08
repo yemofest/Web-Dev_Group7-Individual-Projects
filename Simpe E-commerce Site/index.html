@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-commerce Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Simple E-commerce Site</h1>
+            <a href="#" id="cart-btn">
+                <span id="cart-icon" class="icon">🛒</span>
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="container" id="products-container">
+            <!-- Product listings with images -->
+            <div class="product">
+                <img src="images/product img2.jpg" alt="Nice T-Shirt" class="product-image">
+                <h3>Product 1</h3>
+                <p>$10</p>
+                <button class="add-to-cart" data-id="1">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/product img1.jpeg" alt="Cool Shirt" class="product-image">
+                <h3>Product 2</h3>
+                <p>$12</p>
+                <button class="add-to-cart" data-id="2">Add to Cart</button>
+            </div>
+            <!-- Additional product listings will be dynamically generated here -->
+        </div>
+    </main>
+    <div class="overlay" id="overlay"></div>
+    <div class="cart-modal" id="cart-modal">
+        <div class="container">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total">Total: $0</div>
+            <button id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
